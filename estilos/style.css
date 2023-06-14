@@ -82,7 +82,7 @@ main {
     text-align: justify;
 }
 fieldset {
-    margin-left: 30%;
+    padding-left: 30%;
     border: none;
     color: black;
     font-size: 1.2em;
