@@ -25,9 +25,9 @@ body {
     font-family: var(--fonte-estilo);
     color: white;
 }
-nav {
+.nave {
     background-color: var(--cor2);
-    padding: 8px;;
+    padding: 8px;
 }
 
 header {
