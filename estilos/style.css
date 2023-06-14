@@ -5,6 +5,7 @@
 *{
     margin: 0px;
     padding: 0px;
+    box-sizing: border-box;
 }
 
 :root{
@@ -26,7 +27,7 @@ body {
 }
 nav {
     background-color: var(--cor2);
-    padding: 8px;
+    padding: 8px;;
 }
 
 header {
