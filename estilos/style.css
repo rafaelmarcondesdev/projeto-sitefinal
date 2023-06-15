@@ -20,7 +20,8 @@
 
 body {
     background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
-    min-height: 100vh;
+    height: 100vh;
+    width: 100%;
     font-family: var(--fonte-estilo);
     color: var(--cor5);
 
@@ -30,7 +31,6 @@ header {
     height: 25vh;
     text-align: center;
     font-weight: bolder;
-    width: auto;
 }
 header > h1 {
     padding-top: 50px;
@@ -101,6 +101,11 @@ fieldset textarea {
     border-radius: 0px 5px 0px 0px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
 }
+.f1 .f2 .f3 {
+    display: flex;
+    flex-direction: column;
+}
+
 
 hr{
     min-width: 300px;

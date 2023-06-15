@@ -20,13 +20,18 @@
     </nav>
     <main>
         <section>
-            <p>Se cadastrando em nosso site para obter as melhores desconto e novidades</p>
+            <p>
+                Se cadastrando em nosso site para obter as melhores desconto e novidades
+            </p>
         </section>
-        <form action="">
-            <fieldset>Cadastro de Clientes
+        <form action="#" class="container">
+            <fieldset class="f1">Cadastro de Clientes
                 <br>
-                <label for="nomec">Nome Completo</label><br>
-                <input type="text" name="nomec" id="nome">
+                <label for="nome">Nome</label><br>
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <br>
+                <label for="sobrenome">Sobrenome</label><br>
+                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
                 <br>
                 <label for="celular">Fone/Celular</label><br>
                 <input type="tel" name="celular" id="celular">
@@ -34,17 +39,28 @@
                 <label for="contato">Outro Contato</label><br>
                 <input type="tel" name="contato" id="contato">
                 <br>
-                <label for="contato"></label>
-                <label for="documento">CPF</label><br>
+                <label for="cpf"></label>
+                <label for="cpf">CPF</label><br>
                 <input type="text" name="celular" id="celular">
                 <br>
                 <label for="email">Email</label><br>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" placeholder="Digite seu email">
                 <br>
                 <label for="data">Data de Nascimento</label><br>
                 <input type="date" name="data" id="data">
+                <br>
+            <fieldset class="f2">
+                <label for="genero">Genero</label>
+                <input type="radio" id="female" name="genero">
+                <label for="female">Feminino</label>
+                <input type="radio" id="male" name="genero">
+                <label for="male">Masculino</label>
+                <input type="radio" id="none" name="genero">
+                <label for="none">Prefiro não dizer</label>
+                <br>
             </fieldset>
-            <fieldset>
+            </fieldset>
+            <fieldset class="f3">
                 <label for="endereço">Endereço</label><br>
                 <input type="text" name="endereço" id="endereço">
                 <br>
@@ -89,15 +105,14 @@
                     <option value="TO">Tocantins</option>
                 </select>
             </fieldset>
-            <fieldset>
-
+            <fieldset class="f4">
+                <input type="submit" name="enviar" id="enviar">
+                <input type="reset" name="reset" id="reset">
             </fieldset>
         </form>
 
-        <section>
-
-        </section>
     </main>
+
     <footer>
         <p>
             Todos direitos reservados
