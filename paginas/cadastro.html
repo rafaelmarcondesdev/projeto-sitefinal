@@ -19,14 +19,18 @@
         <a href="contato.html">Contato</a>
     </nav>
     <main class="container">
-        <section class="s1">
+        <section class="sectioncadastro">
             <p>
-                Se cadastrando em nosso site para obter as melhores desconto e novidades
+                Se cadastrando em nosso site e entrando para o clube de amigos voce pode aproveitar os melhores desconto, reservar mesas e ficar por dentro de todas as novidades.
             </p>
+            <br>
+            <p>
+                Cadastro de Clientes
+            </p><hr>
         </section>
         <form action="#" class="formcadastro">
-            <fieldset class="f1">Cadastro de Clientes
-                <br>
+            <fieldset class="f1">
+                
                 <label for="nome">Nome</label><br>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
                 <br>
@@ -34,14 +38,13 @@
                 <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
                 <br>
                 <label for="celular">Fone/Celular</label><br>
-                <input type="tel" name="celular" id="celular">
+                <input type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx">
                 <br>
-                <label for="contato">Outro Contato</label><br>
-                <input type="tel" name="contato" id="contato">
+                <label for="outrocontato">Outro Contato</label><br>
+                <input type="tel" name="outrocontato" id="outrocontato" placeholder="(xx) xxxxx-xxxx">
                 <br>
-                <label for="cpf"></label>
                 <label for="cpf">CPF</label><br>
-                <input type="text" name="celular" id="celular">
+                <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
                 <br>
                 <label for="email">Email</label><br>
                 <input type="email" name="email" id="email" placeholder="Digite seu email">
@@ -50,14 +53,11 @@
                 <input type="date" name="data" id="data">
                 <br>
             <fieldset class="f2">
-                <label for="genero">Genero</label>
-                <input type="radio" id="female" name="genero">
-                <label for="female">Feminino</label>
-                <input type="radio" id="male" name="genero">
-                <label for="male">Masculino</label>
-                <input type="radio" id="none" name="genero">
-                <label for="none">Prefiro não dizer</label>
-                <br>
+                <p>Gênero</p>
+                <input type="radio" id="female" name="female">Feminino
+                <input type="radio" id="male" name="male">Masculino
+                <input type="radio" id="none" name="none">Prefiro não informar
+                <br><hr>
             </fieldset>
             </fieldset>
             <fieldset class="f3">
@@ -103,7 +103,7 @@
                     <option value="SP">São Paulo</option>
                     <option value="SE">Sergipe</option>
                     <option value="TO">Tocantins</option>
-                </select>
+                </select><hr>
             </fieldset>
             <fieldset class="f4">
                 <input type="submit" name="enviar" id="enviar">
