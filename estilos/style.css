@@ -122,6 +122,22 @@ hr{  /*linha*/
 fieldset {
     border: none;
 }
+fieldset.f1 > input {
+    border: none;
+    min-width: 300px;
+    max-width: 40vw;
+    height: 20px;
+    border-radius: 0px 5px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
+fieldset.f3 > input {
+    border: none;
+    min-width: 300px;
+    max-width: 40vw;
+    height: 20px;
+    border-radius: 0px 5px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
 
 /*  ----- INICIO DO FOOTER/RODAPÉ -----  */
 footer {
