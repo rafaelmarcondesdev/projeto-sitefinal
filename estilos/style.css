@@ -57,6 +57,7 @@ nav li {
     background-color: var(--cor2);
     display: block;
 }
+
 .dropdown:hover .dropdownmenu {
     display: block;  /*Ao passar o mouse o menu irá aparecer*/
 }
