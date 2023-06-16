@@ -141,10 +141,12 @@ fieldset.f3 > input {
 }
 /*  ----- INICIO PAGINA SOBRE NOS -----  */
 section > p {
+    padding-top: 1em;
     padding-bottom: 2em;
 }
 section.normal {
     color: black;
+    text-align: justify;
     padding-right: 25%;
     max-width: 75vw;
 }
@@ -159,17 +161,21 @@ section.imagem{
 }
 section.imagem > p {
     display: inline-block;
-    padding: 5px;
+    padding: 20px 40px 10px 20px;
     background-color: rgba(95, 95, 95, 0.418);
+    height: 100%;
+    text-align: justify;
     text-shadow: 2px 2px 0px black;
 }
 section#img01{
+    max-width: 1000px;
     background-image: url('../imagens/macarrao.jpg');
     background-position: center center;
     
 }
 section#img02{
-    background-image: url('../imagens/preparo.jpg');
+    max-width: 1000px;
+    background-image: url('../imagens/prato.jpg');
     background-position: center center;
 }
 
