@@ -24,7 +24,7 @@ body {
 /*  ----- INICIO DO HEADER/CABEÇALHO -----  */
 header {
     background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
-    height: 25vh;
+    min-height: 150px;
     width: 100vw;
     text-align: center;
     font-weight: bolder;
@@ -36,7 +36,7 @@ header > h1 {
 
 nav {
     background-color: var(--cor2);
-    width: 100vw;
+    width: 100%;
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
