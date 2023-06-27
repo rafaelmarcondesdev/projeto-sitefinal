@@ -5,9 +5,11 @@ function Enviar() {
         email: "",
         //aniversario: "",
         celular: "",
-        outro: ""
-        
-
+        outro: "",
+        endereço: "",
+        numero: "",
+        cidade: "",
+        estado: ""
     };
 
 
@@ -19,7 +21,10 @@ function Enviar() {
     pessoa.outro=document.getElementById("outrocontato").value;
     var generoSelecionado = document.querySelector('input[name="sex"]:checked');
     pessoa.genero = generoSelecionado ? generoSelecionado.value : "Não informado";
-
+    pessoa.endereço=document.getElementById("endereço").value;
+    pessoa.numero=document.getElementById("numero").value;
+    pessoa.cidade=document.getElementById("cidade").value;
+    pessoa.estado=document.getElementById("estado").value;
 
 
 
@@ -30,6 +35,8 @@ function Enviar() {
     document.getElementById("celularresp").innerHTML=pessoa.celular;
     document.getElementById("outroresp").innerHTML=pessoa.outro;
     document.getElementById("generoresp").innerHTML=pessoa.genero;
-
-
+    document.getElementById("endereçoresp").innerHTML=pessoa.endereço;
+    document.getElementById("numeroresp").innerHTML=pessoa.numero;
+    document.getElementById("cidaderesp").innerHTML=pessoa.cidade;
+    document.getElementById("estadoresp").innerHTML=pessoa.estado;
 }

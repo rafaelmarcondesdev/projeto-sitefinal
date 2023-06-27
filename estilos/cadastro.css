@@ -83,3 +83,7 @@ input {
 .button:hover {
     background-color: darkred;
 }
+aside {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}

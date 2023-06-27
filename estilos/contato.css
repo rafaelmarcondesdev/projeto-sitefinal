@@ -9,6 +9,10 @@
     color: black;
 }
 /*section da pagina contato*/
+section{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
 .sectioncontato { 
     align-self: center;
     padding: 20px 20px 20px 20px;
