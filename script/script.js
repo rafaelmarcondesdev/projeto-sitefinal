@@ -1,6 +1,7 @@
 function Enviar() {
     var pessoa = {
         nome: "",
+        sobrenome: "",
         email: "",
         //aniversario: "",
         celular: "",
@@ -11,6 +12,7 @@ function Enviar() {
 
 
     pessoa.nome=document.getElementById("nome").value;
+    pessoa.sobrenome=document.getElementById("sobrenome").value;
     pessoa.email=document.getElementById("email").value;
     //pessoa.aniversario=getElementById("dtnascimento").value;
     pessoa.celular=document.getElementById("celular").value;
@@ -22,6 +24,7 @@ function Enviar() {
 
 
     document.getElementById("nomeresp").innerHTML=pessoa.nome;
+    document.getElementById("sobrenomeresp").innerHTML=pessoa.sobrenome;
     document.getElementById("emailresp").innerHTML=pessoa.email;
     //document.getElementById("dtnascimentoresp").innerHTML=pessoa.aniversario;
     document.getElementById("celularresp").innerHTML=pessoa.celular;

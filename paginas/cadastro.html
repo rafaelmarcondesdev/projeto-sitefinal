@@ -63,7 +63,7 @@
             <!--Nome e Sobrenome-->
             <fieldset>
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
+                <input type="text" name="nome" id="nome" placeholder="Digite seu nome" required>
                 <div class="centro">
                     <label for="sobrenome">Sobrenome</label>
                     <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
@@ -72,7 +72,7 @@
             <!--Celular e outro contato-->
             <fieldset>
                 <label for="celular">Fone/Celular</label>
-                <input type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx">
+                <input type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx" required>
 
                 <div class="centro">
                     <label for="outrocontato">Outro Contato</label>
@@ -100,7 +100,7 @@
             <!--Genero-->
             <fieldset class="radio">
                 <p>Gênero: </p><br>
-                <p>Masculino<input type="radio" name="sex"><br>Feminino<input type="radio" name="sex"><br>Outro<input type="radio" name="sex"></p>
+                <p>Masculino<input type="radio" name="sex" value="Masculino"><br>Feminino<input type="radio" name="sex" value="Feminino"><br>Outro<input type="radio" name="sex" value="Outro"></p>
                 <br>
             </fieldset>
 
