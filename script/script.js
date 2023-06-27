@@ -2,31 +2,31 @@ function Enviar() {
     var pessoa = {
         nome: "",
         email: "",
-        aniversario: "",
+        //aniversario: "",
         celular: "",
-        telefone: ""
+        outro: ""
+        
+
     };
 
 
     pessoa.nome=document.getElementById("nome").value;
     pessoa.email=document.getElementById("email").value;
-    pessoa.aniversario=document.getElementById("dtnascimento").value;
-    let data = new Date(pessoa.aniversario);
-    let dataformatada= data.toLocaleDateString('pt-br', {timeZone: 'UTC'});
+    //pessoa.aniversario=getElementById("dtnascimento").value;
     pessoa.celular=document.getElementById("celular").value;
-    pessoa.telefone=document.getElementById("telefone").value;
-    //pessoa.genero=document.getElementById("sex").value;
-    let datad = data.getDay();
+    pessoa.outro=document.getElementById("outrocontato").value;
+    var generoSelecionado = document.querySelector('input[name="sex"]:checked');
+    pessoa.genero = generoSelecionado ? generoSelecionado.value : "Não informado";
 
-    
+
 
 
     document.getElementById("nomeresp").innerHTML=pessoa.nome;
     document.getElementById("emailresp").innerHTML=pessoa.email;
-    document.getElementById("dtnascimentoresp").innerHTML=dataformatada;
+    //document.getElementById("dtnascimentoresp").innerHTML=pessoa.aniversario;
     document.getElementById("celularresp").innerHTML=pessoa.celular;
-    document.getElementById("telefoneresp").innerHTML=pessoa.telefone;
-    //document.getElementById("generoresp").innerHTML=pessoa.genero;
-    document.getElementById("datadia").innerHTML=datad;
+    document.getElementById("outroresp").innerHTML=pessoa.outro;
+    document.getElementById("generoresp").innerHTML=pessoa.genero;
+
 
 }
