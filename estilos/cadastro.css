@@ -65,6 +65,12 @@ input {
 #numero {
     min-width: auto;
 }
+.radio {
+    padding: 20px;
+}
+.radio > p {
+    padding: 0px 20px;
+}
 .button {
     background-color: darkgray;
     font-weight: bolder;

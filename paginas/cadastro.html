@@ -7,6 +7,7 @@
     <title>Cadastro</title>
     <link rel="stylesheet" href="../estilos/style.css">
     <link rel="stylesheet" href="../estilos/cadastro.css">
+    <script src="../script/script.js"></script>
 </head>
 <body>
     <header>
@@ -98,11 +99,9 @@
             </fieldset>
                 
 
-            <fieldset>
-                <p>Gênero</p>
-                <input type="radio" id="female" name="female">Feminino
-                <input type="radio" id="male" name="male">Masculino
-                <input type="radio" id="ninform" name="ninform">Prefiro não informar
+            <fieldset class="radio">
+                <p>Gênero: </p><br>
+                <p>Masculino<input type="radio" name="sex"><br>Feminino<input type="radio" name="sex"><br>Não informar<input type="radio" name="sex"></p>
                 <br>
             </fieldset>
 
@@ -159,14 +158,22 @@
 
             <fieldset>
                 <br>
-                <input type="button" class="button" id="enviar" value="Enviar" onclick="enviar()">
+                <input type="button" class="button" id="enviar" value="Enviar" onclick="Enviar()">
                 <input type="reset" class="button" id="reset">
                 <br>
             </fieldset>
 
         </form>
         <aside>
-            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci laborum, dolores esse provident, quaerat fugit nostrum quae ad nihil quo aut beatae molestiae, odit magni. Veniam eveniet doloremque blanditiis consequuntur.</p>
+            <div id="d8">
+                <h3>Dados Cadastrais: </h3>
+                Nome: <label id="nomeresp"></label><br>
+                Email: <label id="emailresp"></label><br>
+                Data de Nascimento: <label id="dtnascimentoresp"></label><br>
+                Celular Principal: <label id="celularresp"></label><br>
+                Telefone Residencial: <label id="telefoneresp"></label><br>
+                Gênero: <label id="generoresp"></label>
+            </div>
         </aside>
     </main>
 

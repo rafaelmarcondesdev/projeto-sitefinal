@@ -3,23 +3,23 @@
 
 /* class conteiner no main */
 .container{
+    text-align: justify;
     font-size: 1.2em;
-    padding-left: 50px;
+    margin-left: 10%;
+    color: black;
 }
 /*section da pagina contato*/
 .sectioncontato { 
-    margin-left: 20%;
     align-self: center;
-    padding-top: 20px;
-    padding-right: 20%;
-    max-width: 80vw;
+    padding: 20px 20px 20px 20px;
+    max-width: 80%;
     color: black;
     font-size: 1.2em;
     text-align: justify;
 }
 /*fieldset da pagina contato*/
 .contato {
-    padding-left: 20%;
+    padding-left: 20px;
     border: none;
     color: black;
     font-size: 1.2em;
@@ -41,7 +41,7 @@
  /*caixa de texto pagina contato*/
 #mensagem {
     min-width: 300px;
-    max-width: 40vw;
+    max-width: 60vw;
     border-radius: 0px 5px 0px 0px;
     box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
 }
@@ -49,4 +49,7 @@
 hr{
     min-width: 300px;
     max-width: 50vw;  
+}
+aside {
+    padding: 10px;
 }
