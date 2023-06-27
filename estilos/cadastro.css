@@ -1,41 +1,79 @@
-@charset "UTF-8";
 
-@import url('https://fonts.googleapis.com/css2?family= Parisienne & display=swap') ;
+ /* ----- INICIO DA PAGINA CADASTRO ----- */
 
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
+ /* main da pagina*/
+main.container {   
+    text-align: justify;
+    font-size: 1.2em;
+    margin-left: 10%;
+    color: black;
+}
+ /* section class.cadastro */
+.cadastro { 
+    align-self: center;
+    padding: 20px 0px 20px 0px;
+    max-width: 80%;
+}
+ /* form class.formcadastro */
+.formcadastro {
+    width: 80%;
+    background-color: transparent;
+    font-size: 1.1em;
 }
 
-:root{
-    --cor0:#3f1503;
-    --cor1:#91491a;    ;
-    --cor2:#740005;
-    --cor3:#c32105;
-    --cor4:#807e2a;
-    --cor5:#eadac0;
-    --fonte-estilo: 'Parisienne', cursive;;
+ /* tag fieldset*/
+fieldset {
+    padding: 20px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-items: flex-end;
 }
 
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: var(--fonte-estilo);
-}
-
-body {
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
-    width: 100%;
-    height: 100vh;
-}
-header {
-    background-image: linear-gradient(to bottom, var(--cor0), var(--cor1));
-    height: 25vh;
-    text-align: center;
+label {
+    padding-right: 3px;
+    color: black;
     font-weight: bolder;
+    padding: 10px;
 }
-header > h1 {
-    padding-top: 50px;
+
+.centro {
+    margin: 0 auto;
+    justify-self: center;
+    padding: 5px;
+}
+
+input {
+    border: none;
+    padding: 5px;
+    font-size: 1em;
+    max-width: 40vw;
+    border-radius: 0px 2px 2px 2px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.37);
+    background-color: transparent;
+/*IDs do radio*/
+}
+#female, #male, #ninform {
+    min-width: auto;
+    font-size: 1.1em;
+    font-weight: bolder;
+    margin-left: 20px;
+
+}
+#celular, #outrocontato, #cpf, #rg, #data, #cidade, #email {
+    min-width: auto;
+}
+#numero {
+    min-width: auto;
+}
+.button {
+    background-color: darkgray;
+    font-weight: bolder;
+    justify-items: center;
+    min-width: auto;
+    margin: 0px 20px;
+    border-radius: 2px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.529);
+}
+.button:hover {
+    background-color: darkred;
 }

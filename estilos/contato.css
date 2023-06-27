@@ -1,0 +1,52 @@
+
+/*  -----  INICIO DA PAGINA CONTATO ----- */
+
+/* class conteiner no main */
+.container{
+    font-size: 1.2em;
+    padding-left: 50px;
+}
+/*section da pagina contato*/
+.sectioncontato { 
+    margin-left: 20%;
+    align-self: center;
+    padding-top: 20px;
+    padding-right: 20%;
+    max-width: 80vw;
+    color: black;
+    font-size: 1.2em;
+    text-align: justify;
+}
+/*fieldset da pagina contato*/
+.contato {
+    padding-left: 20%;
+    border: none;
+    color: black;
+    font-size: 1.2em;
+}
+
+.caixa {
+    display: flex;
+    flex-direction: column;
+}
+
+.contato input {
+    border: none;
+    min-width: 300px;
+    max-width: 40vw;
+    height: 20px;
+    border-radius: 0px 5px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
+ /*caixa de texto pagina contato*/
+#mensagem {
+    min-width: 300px;
+    max-width: 40vw;
+    border-radius: 0px 5px 0px 0px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.37);
+}
+ /*linha*/
+hr{
+    min-width: 300px;
+    max-width: 50vw;  
+}

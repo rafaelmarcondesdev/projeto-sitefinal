@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cadastro</title>
     <link rel="stylesheet" href="../estilos/style.css">
+    <link rel="stylesheet" href="../estilos/cadastro.css">
 </head>
 <body>
     <header>
@@ -47,98 +48,122 @@
             </li>
         </ul>
     </nav>
-    <main class="containercad">
-        <section class="sectioncadastro">
+    <main class="container">
+        <section class="cadastro">
             <p>
                 Se cadastrando em nosso site e entrando para o clube de amigos voce pode aproveitar os melhores desconto, reservar mesas e ficar por dentro de todas as novidades.
             </p>
             <br>
             <p>
                 Cadastro de Clientes
-            </p><hr>
+            </p>
         </section>
-        <form action="#" class="formcadastro">
-            <fieldset class="f1">
-                
-                <label for="nome">Nome</label><br>
+        <form action="#" class="formcadastro" class="flexbox">
+            <!--Nome e Sobrenome-->
+            <fieldset>
+                <label for="nome">Nome:</label>
                 <input type="text" name="nome" id="nome" placeholder="Digite seu nome">
-                <br>
-                <label for="sobrenome">Sobrenome</label><br>
-                <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
-                <br>
-                <label for="celular">Fone/Celular</label><br>
+                <div class="centro">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" placeholder="Digite seu sobrenome">
+                </div>
+            </fieldset>
+            <!--Celular e outro contato-->
+            <fieldset>
+                <label for="celular">Fone/Celular</label>
                 <input type="tel" name="celular" id="celular" placeholder="(xx) xxxxx-xxxx">
-                <br>
-                <label for="outrocontato">Outro Contato</label><br>
-                <input type="tel" name="outrocontato" id="outrocontato" placeholder="(xx) xxxxx-xxxx">
-                <br>
-                <label for="cpf">CPF</label><br>
+
+                <div class="centro">
+                    <label for="outrocontato">Outro Contato</label>
+                    <input type="tel" name="outrocontato" id="outrocontato" placeholder="(xx) xxxxx-xxxx">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="cpf">CPF</label>
                 <input type="text" name="cpf" id="cpf" placeholder="xxx.xxx.xxx-xx">
-                <br>
-                <label for="email">Email</label><br>
-                <input type="email" name="email" id="email" placeholder="Digite seu email">
-                <br>
-                <label for="data">Data de Nascimento</label><br>
+                <div class="centro">
+                    <label for="rg">RG:</label>
+                    <input type="text" name="rg" id="rg" placeholder="xx.xxx.xxx-x">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <label for="data">Data de Nascimento</label>
                 <input type="date" name="data" id="data">
-                <br>
-            <fieldset class="f2">
+                <div class="centro">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Digite seu email">
+                </div>
+            </fieldset>
+                
+
+            <fieldset>
                 <p>Gênero</p>
                 <input type="radio" id="female" name="female">Feminino
                 <input type="radio" id="male" name="male">Masculino
-                <input type="radio" id="none" name="none">Prefiro não informar
-                <br><hr>
+                <input type="radio" id="ninform" name="ninform">Prefiro não informar
+                <br>
             </fieldset>
-            </fieldset>
-            <fieldset class="f3">
-                <label for="endereço">Endereço</label><br>
+
+            <fieldset>
+                <label for="endereço">Endereço</label>
                 <input type="text" name="endereço" id="endereço">
-                <br>
-                <label for="numero">Número</label><br>
-                <input type="number" name="numero" id="numero">
-                <br>
-                <label for="cep">CEP</label><br>
-                <input type="number" name="cep" id="cep">
-                <br>
-                <label for="cidade">Cidade</label><br>
-                <input type="text" name="cidade" id="cidade">
-                <br>
-                <label for="uf">UF</label><br>
-                <select name="uf" id="uf"><br>
-                    <option value="">Selecione</option>
-                    <option value="AC">Acre</option>
-                    <option value="AL">Alagoas</option>
-                    <option value="AP">Amapá</option>
-                    <option value="AM">Amazonas</option>
-                    <option value="BA">Bahia</option>
-                    <option value="CE">Ceará</option>
-                    <option value="DF">Distrito Federal</option>
-                    <option value="ES">Espirito Santo</option>
-                    <option value="GO">Goiás</option>
-                    <option value="MA">Maranhão</option>
-                    <option value="MS">Mato Grosso do Sul</option>
-                    <option value="MT">Mato Grosso</option>
-                    <option value="MG">Minas Gerais</option>
-                    <option value="PA">Pará</option>
-                    <option value="PB">Paraíba</option>
-                    <option value="PR">Paraná</option>
-                    <option value="PE">Pernambuco</option>
-                    <option value="PI">Piauí</option>
-                    <option value="RJ">Rio de Janeiro</option>
-                    <option value="RN">Rio Grande do Norte</option>
-                    <option value="RS">Rio Grande do Sul</option>
-                    <option value="RO">Rondônia</option>
-                    <option value="RR">Roraima</option>
-                    <option value="SC">Santa Catarina</option>
-                    <option value="SP">São Paulo</option>
-                    <option value="SE">Sergipe</option>
-                    <option value="TO">Tocantins</option>
-                </select><hr>
+                <div class="centro">
+                    <label for="numero">Número</label>
+                    <input type="number" name="numero" id="numero">
+                </div>
             </fieldset>
-            <fieldset class="f4">
-                <br>
-                <input type="submit" name="enviar" id="enviar">
-                <input type="reset" name="reset" id="reset"><br>
+            
+            <fieldset>
+                <label for="cep">CEP</label>
+                <input type="text" name="cep" id="cep" placeholder="xx.xxx-xxx">
+                <div class="centro">
+                    <label for="cidade">Cidade</label>
+                    <input type="text" name="cidade" id="cidade">
+                </div>
             </fieldset>
+            <fieldset>
+                <label for="estado">UF</label>
+                    <select name="estado" id="estado">
+                        <option value="#">Selecione</option>
+                        <option value="AC">Acre</option>
+                        <option value="AL">Alagoas</option>
+                        <option value="AP">Amapá</option>
+                        <option value="AM">Amazonas</option>
+                        <option value="BA">Bahia</option>
+                        <option value="CE">Ceará</option>
+                        <option value="DF">Distrito Federal</option>
+                        <option value="ES">Espirito Santo</option>
+                        <option value="GO">Goiás</option>
+                        <option value="MA">Maranhão</option>
+                        <option value="MS">Mato Grosso do Sul</option>
+                        <option value="MT">Mato Grosso</option>
+                        <option value="MG">Minas Gerais</option>
+                        <option value="PA">Pará</option>
+                        <option value="PB">Paraíba</option>
+                        <option value="PR">Paraná</option>
+                        <option value="PE">Pernambuco</option>
+                        <option value="PI">Piauí</option>
+                        <option value="RJ">Rio de Janeiro</option>
+                        <option value="RN">Rio Grande do Norte</option>
+                        <option value="RS">Rio Grande do Sul</option>
+                        <option value="RO">Rondônia</option>
+                        <option value="RR">Roraima</option>
+                        <option value="SC">Santa Catarina</option>
+                        <option value="SP">São Paulo</option>
+                        <option value="SE">Sergipe</option>
+                        <option value="TO">Tocantins</option>
+                    </select>
+            </fieldset>
+
+            <fieldset>
+                <br>
+                <input type="button" class="button" id="enviar" value="Enviar" onclick="enviar()">
+                <input type="reset" class="button" id="reset">
+                <br>
+            </fieldset>
+
         </form>
         <aside>
             <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Adipisci laborum, dolores esse provident, quaerat fugit nostrum quae ad nihil quo aut beatae molestiae, odit magni. Veniam eveniet doloremque blanditiis consequuntur.</p>
