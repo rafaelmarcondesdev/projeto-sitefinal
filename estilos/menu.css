@@ -6,10 +6,11 @@
     padding: 0;
     box-sizing: border-box;
 }
-h1{
-    padding: 20px;
+
+#h1{
+    padding-top: 10px;
     color: black;
-    text-align: center;
+    text-align: left;
     text-shadow: 1px 1px 1px darkred;
 }
 .aa {
@@ -19,7 +20,8 @@ h1{
     grid-area: b;
 }
 .container {   
-    height: 100vh;
+    height: 100%;
+    width: 100vw;
     font-size: 1.2em;
     color: black;
     display: grid;
@@ -29,11 +31,14 @@ h1{
     grid-template-areas: "a b"
 }
 article {
-    margin-top: 20px;
+    margin-top: 10px;
     
 }
 
 
 #prato {
-    height: 100vh;
+    height: 100%;
+    max-width: 40vw;
+    background-attachment: fixed;
+    background-size: cover;
 }
