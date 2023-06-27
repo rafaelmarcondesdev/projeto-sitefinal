@@ -3,7 +3,7 @@ function Enviar() {
         nome: "",
         sobrenome: "",
         email: "",
-        //aniversario: "",
+        aniversario: "",
         celular: "",
         outro: "",
         endereço: "",
@@ -25,13 +25,16 @@ function Enviar() {
     pessoa.numero=document.getElementById("numero").value;
     pessoa.cidade=document.getElementById("cidade").value;
     pessoa.estado=document.getElementById("estado").value;
+    pessoa.aniversario=document.getElementById("dtnascimento").value;
+    let data = new Date(pessoa.aniversario);
+    let dataFormatada= data.toLocaleDateString('pt-BR', {timeZone: 'UTC'});
 
 
 
     document.getElementById("nomeresp").innerHTML=pessoa.nome;
     document.getElementById("sobrenomeresp").innerHTML=pessoa.sobrenome;
     document.getElementById("emailresp").innerHTML=pessoa.email;
-    //document.getElementById("dtnascimentoresp").innerHTML=pessoa.aniversario;
+    document.getElementById("dtnascimentoresp").innerHTML=pessoa.aniversario;
     document.getElementById("celularresp").innerHTML=pessoa.celular;
     document.getElementById("outroresp").innerHTML=pessoa.outro;
     document.getElementById("generoresp").innerHTML=pessoa.genero;
