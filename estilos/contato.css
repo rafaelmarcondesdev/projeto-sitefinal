@@ -2,6 +2,11 @@
 /*  -----  INICIO DA PAGINA CONTATO ----- */
 
 /* class conteiner no main */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 .container{
     text-align: justify;
     font-size: 1.2em;

@@ -16,7 +16,6 @@ function Enviar() {
     pessoa.nome=document.getElementById("nome").value;
     pessoa.sobrenome=document.getElementById("sobrenome").value;
     pessoa.email=document.getElementById("email").value;
-    //pessoa.aniversario=getElementById("dtnascimento").value;
     pessoa.celular=document.getElementById("celular").value;
     pessoa.outro=document.getElementById("outrocontato").value;
     var generoSelecionado = document.querySelector('input[name="sex"]:checked');

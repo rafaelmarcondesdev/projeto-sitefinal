@@ -2,7 +2,8 @@
  /* ----- INICIO DA PAGINA CADASTRO ----- */
 
  /* main da pagina*/
-main.container {   
+main.container {
+    width: 100vw;
     text-align: justify;
     font-size: 1.2em;
     margin-left: 10%;
