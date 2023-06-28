@@ -19,3 +19,13 @@ section.video > iframe {
     width: 80%;
     height: 80%;
 }
+.c1 {
+    color: black;
+    text-align: justify;
+    padding: 20px;
+    width: 100%;
+}
+.c3 {
+    color: black;
+    padding: 20px;
+}
