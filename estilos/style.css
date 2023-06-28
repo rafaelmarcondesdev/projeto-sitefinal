@@ -16,7 +16,7 @@
     --fonte-estilo: 'Parisienne', cursive;
 }
 body {   
-    background-image: linear-gradient(to bottom, var(--cor4), var(--cor5));
+    background-image: linear-gradient(to bottom, rgb(245, 245, 232), var(--cor5));
     width: 100%;
     font-family: var(--fonte-estilo);
     color: var(--cor5);
